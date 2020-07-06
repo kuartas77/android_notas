@@ -1,7 +1,9 @@
-# android_notas
-App de practica para la creación de notas tipo "TODO"
+# android_notas en kotlin
+## App de practica para la creación de notas tipo "TODO"
 
-Realizado con las siguientes librerías:
+### Se realiza un CRUD completo de notas.
+
+##Realizado con las siguientes librerías:
 
 - Google Material Design
 - Livedata
