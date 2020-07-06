@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listNoteFragment">
+
+    <fragment
+        android:id="@+id/listNoteFragment"
+        android:name="com.sofdreamc.notas.ui.fragments.ListNoteFragment"
+        android:label="list_note_fragment"
+        tools:layout="@layout/list_note_fragment">
+        <action
+            android:id="@+id/action_listNoteFragment_to_noteDialog"
+            app:destination="@id/noteDialog"
+            app:launchSingleTop="false" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/noteDialog"
+        android:name="com.sofdreamc.notas.ui.fragments.NoteDialog"
+        android:label="DialogNote"
+        tools:layout="@layout/dialog_note">
+
+        <argument
+            android:name="note"
+            android:defaultValue="@null"
+            app:argType="com.sofdreamc.notas.data.local.models.Note"
+            app:nullable="true" />
+    </dialog>
+</navigation>
