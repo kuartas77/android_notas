@@ -11,7 +11,5 @@
 - Room
 - Coroutines
 - Coroutine Lifecycle Scopes
-- Dagger Core
-- Dagger Android
 - Dagger - Hilt
 - Activity KTX

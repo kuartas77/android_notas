@@ -12,4 +12,5 @@
     <string name="title_edit_note">Modificar nota</string>
     <string name="title_create_note">Crear nota</string>
     <string name="is_done">Está Terminado?</string>
+    <string name="txt_delete">Eliminar</string>
 </resources>

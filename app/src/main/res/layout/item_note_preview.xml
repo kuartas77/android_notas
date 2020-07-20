@@ -13,9 +13,45 @@
     tools:ignore="PrivateResource">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_background"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:layout_margin="4dp"
+        android:background="@color/colorSecondary"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/image_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/txt_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/txt_delete"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_delete"
+            app:layout_constraintEnd_toStartOf="@+id/image_delete"
+            app:layout_constraintTop_toTopOf="@+id/image_delete" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_margin="4dp"
+        android:background="@color/colorOnSecondary"
         android:padding="2dp">
 
         <ImageView
@@ -59,17 +95,6 @@
             app:layout_constraintTop_toBottomOf="@+id/image_important"
             tools:text="2020-06-10" />
 
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/divider"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txt_content" />
-
         <ImageView
             android:id="@+id/image_is_done"
             android:layout_width="wrap_content"
@@ -80,5 +105,6 @@
             tools:srcCompat="@drawable/ic_check_box_outline" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.cardview.widget.CardView>

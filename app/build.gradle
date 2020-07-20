@@ -71,15 +71,6 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
 
-    // Dagger Core
-    implementation "com.google.dagger:dagger:$dagger"
-    kapt "com.google.dagger:dagger-compiler:$dagger"
-
-    // Dagger Android
-    api "com.google.dagger:dagger-android:$dagger_android"
-    api "com.google.dagger:dagger-android-support:$dagger_android"
-    kapt "com.google.dagger:dagger-android-processor:$dagger_android"
-
     //Dagger - Hilt
     implementation "com.google.dagger:hilt-android:$dagger_hilt"
     kapt "com.google.dagger:hilt-android-compiler:$dagger_hilt"
